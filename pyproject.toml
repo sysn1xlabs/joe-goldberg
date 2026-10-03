@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "joe-goldberg-osint"
+version = "1.0.0"
+description = "Provenance-first public-source research CLI by sysn1xlabs"
+requires-python = ">=3.10"
+authors = [{name = "sysn1xlabs"}]
+license = {text = "MIT"}
+dependencies = []
+
+[project.scripts]
+joe-goldberg = "joe_goldberg.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["joe_goldberg*"]
